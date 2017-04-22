@@ -20,5 +20,11 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+    
+    ofVec2f vec; //位置
+    ofPath pathLine; //パスの線
+    
+    float mouse_x = 0, mouse_y = 0; //マウスの座標
+    float angle = 0, radius = 0; //角度と半径
 		
 };
